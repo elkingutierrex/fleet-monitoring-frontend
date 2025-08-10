@@ -1,3 +1,4 @@
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -11,6 +12,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: -webkit-fill-available;
 }
 
 a {
@@ -24,10 +26,11 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: #242424;  
+  color: ffffff
 }
 
 h1 {
@@ -57,7 +60,8 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    width: -webkit-fill-available;
+    /* background-color: #ffffff; */
   }
   a:hover {
     color: #747bff;
@@ -65,4 +69,32 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.container-x{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 50PX;
+}
+
+.navbar-customer{ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #6268bd5d; 
+  color: #ffffff;
+}
+.logo{
+  border-radius: 1rem;
+}
+.span-loading{
+  color: #ffffff;
+}
+.size-loading{
+  font-size: 2rem;
 }
