@@ -3,7 +3,6 @@ import { io } from "socket.io-client";
 import { DeliveriesSummary } from "./components/DeliveriesSummary";
 import MapView from "./components/MapView";
 import Navbar from "./components/Navbar";
-import Loading from "./components/Loading";
 
 interface Vehicle {
   id: number;
@@ -27,20 +26,21 @@ function App() {
   return (
     <div className="flex">
         <Navbar />
-        <div className="container-x">
-          <div className="w-full">
-            { vehicles.length === 0 ? 
-            <Loading /> :     
-            
-            <DeliveriesSummary
-              vehicles={vehicles}
-              onSelectVehicle={(v) => setSelectedVehicle(v)}
-            />
-          }
-        
+        <div className="row">
+
+          <div className="container-x col-md-6 justify-content-center align-items-center">
+            <div className="w-full">
+              <DeliveriesSummary
+                vehicles={vehicles}
+                onSelectVehicle={(v) => setSelectedVehicle(v)}
+              />
+            </div>
           </div>
-          <div className="w-1/2">
-            {selectedVehicle && <MapView vehicle={selectedVehicle} />}
+
+          <div className="container-x col-md-6 justify-content-center align-items-center">
+          <div className="w-1-2">
+              <MapView vehicle={selectedVehicle} />
+            </div>
           </div>
         </div>
     </div>
