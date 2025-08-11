@@ -20,7 +20,7 @@ Está desarrollada en React con TypeScript y utiliza socket.io para comunicació
 ## Instalación y ejecución del proyecto
 
 1. Clonar el repositorio frontend
- ``` git clone https://github.com/elkingutierrex/fleet-monitoring-frontend.git ```  
+   ``` git clone https://github.com/elkingutierrex/fleet-monitoring-frontend.git ```  
 2. Instalar dependencias  
    ``` npm install  ```
 3. Arrancar proyecto  
