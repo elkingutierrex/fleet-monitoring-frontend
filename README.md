@@ -29,3 +29,6 @@ Está desarrollada en React con TypeScript y utiliza socket.io para comunicació
 ## NOTA IMPORTANTE: Tener pendiente 
 1. Clonar el repositorio BACKEND Y segir las intrucciones del backend IMPORTANTE QUE CORRA EN EL PUERTO: http://localhost:3000
      ``` git clone https://github.com/elkingutierrex/fleet-monitoring-backend.git ```  
+
+## Contacto
+Cualquier duda o inquietud puede ser tratada al correo elkin.gutierrex@gmail.com
