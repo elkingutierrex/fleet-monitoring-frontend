@@ -17,12 +17,14 @@ Está desarrollada en React con TypeScript y utiliza socket.io para comunicació
 - Pigeon-maps  
 - Bootstrap
 
-## Instalación
+## Instalación y ejecución del proyecto
 
 1. Clonar el repositorio frontend
  ``` git clone https://github.com/elkingutierrex/fleet-monitoring-frontend.git ```  
 2. Instalar dependencias  
    ``` npm install  ```
+3. Arrancar proyecto  
+   ``` npm run dev  ```
 
 ## NOTA IMPORTANTE: Tener pendiente 
 1. Clonar el repositorio BACKEND Y segir las intrucciones del backend IMPORTANTE QUE CORRA EN EL PUERTO: http://localhost:3000
