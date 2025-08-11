@@ -26,8 +26,8 @@ function App() {
   return (
     <div className="flex">
         <Navbar />
-        <div className="row">
-
+        <div className="row">        
+          
           <div className="container-x col-md-6 justify-content-center align-items-center">
             <div className="w-full">
               <DeliveriesSummary
